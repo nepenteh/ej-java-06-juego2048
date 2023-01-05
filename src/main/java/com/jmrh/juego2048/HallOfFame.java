@@ -14,12 +14,10 @@ public class HallOfFame implements Serializable {
 
     public static final int TAMANIO = 10;
 
-    private String nombres[];
-    private int puntuaciones[];
-    private int elementos;
+    private final String nombres[];
+    private final int puntuaciones[];
 
     public HallOfFame() {
-        elementos = 0;
         nombres = new String[TAMANIO];
         puntuaciones = new int[TAMANIO];
     }
@@ -32,7 +30,7 @@ public class HallOfFame implements Serializable {
             int puntAux;
             String nombreAux;
             int i = TAMANIO-2;
-            while (puntuaciones[i] < puntuaciones[i + 1] && i > 0) {
+            while (i >= 0 && puntuaciones[i] < puntuaciones[i + 1]) {
                 puntAux = puntuaciones[i];
                 nombreAux = nombres[i];
                 puntuaciones[i] = puntuaciones[i + 1];

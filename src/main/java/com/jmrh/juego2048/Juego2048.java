@@ -21,7 +21,7 @@ public class Juego2048 {
     public static Tablero tablero;
     public static boolean partidaEnJuego = false;
     public static String nombre;
-    public static HallOfFame hof;
+    public static HallOfFame hof = new HallOfFame();
 
     public static void main(String[] args) {
         scanner = new Scanner(System.in);
@@ -39,8 +39,6 @@ public class Juego2048 {
             fileIn = new FileInputStream("hall_of_fame.dat");
             ObjectInputStream entrada=new ObjectInputStream(fileIn);
             hof = (HallOfFame) entrada.readObject();
-        } catch (FileNotFoundException ex) {
-            hof = new HallOfFame();
         } catch (Exception ex) {
             
         } finally {
