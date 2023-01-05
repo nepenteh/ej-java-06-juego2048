@@ -44,7 +44,7 @@ public class HallOfFame implements Serializable {
 
     public void mostrar() {
         System.out.println("HALL OF FAME");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < TAMANIO; i++) {
             if (puntuaciones[i] > 0) {
                 System.out.println(nombres[i] + " -> " + puntuaciones[i]);
             }
