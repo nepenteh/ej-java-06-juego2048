@@ -15,12 +15,10 @@ public class Tablero implements Serializable {
 
     public static final int FIL = 4;
     public static final int COL = 4;
-    private int[][] tablero;
-    private boolean finJuego;
+    private final int[][] tablero;
     private int puntuacion;
 
     public Tablero() {
-        finJuego = false;
         puntuacion = 0;
         tablero = new int[FIL][COL];
         for (int f = 0; f < FIL; f++) {
@@ -79,7 +77,7 @@ public class Tablero implements Serializable {
     /**
      * Pone un 2 aleatorio en el tablero
      */
-    public void ponerDos() {
+    private void ponerDos() {
         int f;
         int c;
 
