@@ -11,4 +11,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>com.jmrh.juego2048.Juego2048</exec.mainClass>
     </properties>
+    <name>Juego2048</name>
 </project>
