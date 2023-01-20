@@ -1,4 +1,4 @@
-# ej-java-04-servicios
+# ej-java-06-juego2048
 Ejercicio de Java 06. Juego 2048. (Ejercicios de Java para el canal EjerciciosMesa YouTube)
 
 Sexto ejercicio resuelto de Java para el canal de YouTube EjerciciosMesa.
